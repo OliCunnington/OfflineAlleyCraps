@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/grey"
+    tools:context=".gui.InstructionFragment"
+    android:id="@+id/main_menu_fragment">
+
+    <Button
+        android:id="@+id/play_now_btn_mm"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:text="@string/play_now"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/leader_btn_mm"/>
+
+    <Button
+        android:id="@+id/leader_btn_mm"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:text="@string/leaderboards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/play_now_btn_mm"
+        app:layout_constraintBottom_toTopOf="@id/credits_btn_mm"/>
+
+    <Button
+        android:id="@+id/credits_btn_mm"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:text="@string/credits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/how_to_btn_mm"
+        app:layout_constraintTop_toBottomOf="@id/leader_btn_mm"/>
+
+    <Button
+        android:id="@+id/how_to_btn_mm"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:text="@string/how_to_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/settings_btn_mm"
+        app:layout_constraintTop_toBottomOf="@id/credits_btn_mm"/>
+
+    <Button
+        android:id="@+id/settings_btn_mm"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:text="@string/settings"
+        app:layout_constraintTop_toBottomOf="@id/how_to_btn_mm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>
