@@ -31,7 +31,7 @@ public class UserNameFragment extends Fragment {
         setUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (userName.getText() != null){
+                if (!userName.getText().toString().equals("")){
                     ((MainGUIActivity)getActivity()).setUser(userName.getText().toString());
                     ((MainGUIActivity)getActivity()).setViewPager(GUIStatePagerAdapter.MAIN_MENU);
                 } else {

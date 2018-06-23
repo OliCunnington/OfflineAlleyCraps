@@ -1,10 +1,10 @@
-package example.eniac.alleycraps.gui;
+package example.eniac.alleycraps.elements;
 
 import example.eniac.alleycraps.crapschain.CrapsWallet;
 
 public class GameWallet {
 
-    CrapsWallet wallet;
+    private CrapsWallet wallet;
 
     public GameWallet() {
         this.wallet = new CrapsWallet();

@@ -82,14 +82,14 @@ public class MainGUIActivity extends AppCompatActivity {
 
     public void setUser(String username){
         user = new User(username);
-        userInfo.setText(this.user.getName()+"\n\n"+this.user.userWallet.privateKey+"\n\n"+this.user.userWallet.publicKey);
+        userInfo.setText("\n\n"+user.getName()); //+"\n\n"+this.user.userWallet.privateKey+"\n\n"+this.user.userWallet.publicKey);
     }
 
     @Override
     protected void onStop() {
 
         super.onStop();
-        saveUser();
+        //saveUser();
     }
 
     public void saveUser(){
